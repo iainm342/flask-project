@@ -85,6 +85,9 @@ def profile(username):
     return render_template("profile.html", username=username)
 
 
+@app.route("/add_task")
+def add_task():
+    return render_template("add_task.html")
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
